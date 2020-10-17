@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <title>RGY Solutions || Launching Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(./file.webp);
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+        }
+        
+        .wrapper {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.2);
+        }
+        
+        h1 {
+            font-size: max(3vw, 2rem);
+            margin: 1rem;
+            border: 5px solid #ff6a00;
+            display: inline-block;
+            padding: 0.25em 0.5em;
+        }
+        
+        h2 {
+            font-size: max(5vw, 3rem);
+            margin: 1rem;
+            color: #ff6a00;
+            text-shadow: 0px 0px 10px;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid #ffffff;
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            letter-spacing: .05em;
+            /* Adjust as needed */
+            animation: typing 2.5s steps(40, end), blink-caret 2s step-end infinite;
+        }
+        
+        h2 span {
+            color: #fff;
+        }
+        /* The typing effect */
+        
+        @keyframes typing {
+            from {
+                width: 0
+            }
+            to {
+                width: 100%
+            }
+        }
+        /* The typewriter cursor effect */
+        
+        @keyframes blink-caret {
+            from,
+            to {
+                border-color: transparent;
+            }
+            30% {
+                border-color: #fff;
+            }
+            50% {
+                border-color: transparent;
+            }
+            70% {
+                border-color: #ff6a00;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <h1>RGY SOLUTIONS</h1>
+            <h2>Launch<span>ing So</span>on </h2>
+        </div>
+    </div>
+</body>
+
+</html>
