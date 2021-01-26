@@ -1,0 +1,189 @@
+.top-section {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.top-section .poster-slider .poster-wraper {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-section .poster-slider .poster-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 0;
+  -webkit-transition: opacity 2000ms ease-in-out;
+  transition: opacity 2000ms ease-in-out;
+}
+
+.top-section .poster-slider .poster-slide.active {
+  opacity: 1;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(1) {
+  background-image: url(../images/poster/poster_0.jpg);
+  z-index: 11;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(2) {
+  background-image: url(../images/poster/poster_1.jpg);
+  z-index: 10;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(3) {
+  background-image: url(../images/poster/poster_2.jpg);
+  z-index: 9;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(4) {
+  background-image: url(../images/poster/poster_3.jpg);
+  z-index: 8;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(5) {
+  background-image: url(../images/poster/poster_4.jpg);
+  z-index: 7;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(6) {
+  background-image: url(../images/poster/poster_5.jpg);
+  z-index: 6;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(7) {
+  background-image: url(../images/poster/poster_6.jpg);
+  z-index: 5;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(8) {
+  background-image: url(../images/poster/poster_7.jpg);
+  z-index: 4;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(9) {
+  background-image: url(../images/poster/poster_8.jpg);
+  z-index: 3;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(10) {
+  background-image: url(../images/poster/poster_9.jpg);
+  z-index: 2;
+}
+
+.top-section .poster-slider .poster-slide:nth-child(11) {
+  background-image: url(../images/poster/poster_10.jpg);
+  z-index: 1;
+}
+
+.top-section .poster-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+
+.top-section .poster-content .quotes {
+  text-align: center;
+}
+
+.top-section .poster-content .quotes .quote {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  display: none;
+}
+
+@media screen and (min-width: 850px) {
+  .top-section .poster-content .quotes .quote {
+    font-size: 5vw;
+  }
+}
+
+.top-section .poster-content .quotes .quote.active {
+  display: block;
+}
+
+.top-section .poster-content .quotes .quote .line {
+  display: block;
+}
+
+.top-section .poster-content .quotes .quote .line.highlight {
+  color: #ff6a00;
+  font-size: 1.5em;
+  vertical-align: middle;
+  letter-spacing: 0.1em;
+}
+
+.top-section .poster-content .quotes .quote .line.typeing::after {
+  content: "";
+  display: inline-block;
+  border-bottom: 8px solid;
+  opacity: 0;
+  height: 1em;
+  width: calc(1em / 2);
+  -webkit-animation: fadeIn 200ms infinite;
+          animation: fadeIn 200ms infinite;
+  position: absolute;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.main-wrapper section {
+  padding: 5vw 2.5vw;
+}
+
+.main-wrapper section .section-title {
+  text-transform: uppercase;
+}
+
+.main-wrapper section .section-title .title {
+  font-weight: 500;
+  background-image: url(../images/title-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  max-width: 550px;
+  margin: 0.5em auto 1em;
+  padding: 1.2em 0.5em;
+  background-position: center bottom;
+  font-size: 3rem;
+}
+/*# sourceMappingURL=home.css.map */

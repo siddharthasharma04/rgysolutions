@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+@import "./bootstrap.scss";
+
+$appColor: #52534e;
+
+// main Style rules
+html,body{
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.4;
+}
+
+.bg{
+    &-orange{
+        background-color: $orange;
+    }
+    &-dark{
+        background-color: $appColor !important;
+    }
+}
+
+.btn{
+    border-radius: 50px;
+    min-width: 150px;
+    &.btn-primary{
+        background-color: $appColor;
+        border-color: $appColor;
+        &:hover{
+            background-color: rgba($appColor, 0.8);
+        }
+    }
+}
